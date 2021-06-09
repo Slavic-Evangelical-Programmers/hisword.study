@@ -1,0 +1,15 @@
+name: Basic HTML Site CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a random one line script
+      run: echo "Greetings pusher! The new code was pulled!"
